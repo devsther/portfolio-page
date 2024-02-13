@@ -1,0 +1,105 @@
+{
+  "resumeTitle": {
+    "title": ""
+  },
+
+  "information": {
+    "name": "Esther Moon",
+    "contact": [
+      { "id": 0, "name": "Email", "href": "kuwait02@berkeley.edu", "isEmail": true },
+      { "id": 1, "name": "Github", "href": "https://github.com/devsther" }
+    ]
+  },
+
+  "workExperience": [
+    {
+      "id": 0,
+      "name": "University of California, Berkeley",
+      "position": "Undergraduate Researcher\n@Cohen’s Group",
+      "period": ["2021. 08", "2022. 08"]
+    },
+    {
+      "id": 1,
+      "name": "Samsung Bioepis",
+      "position": "Undergraduate Intern",
+      "period": ["2022. 06", "2022. 08"]
+    },
+    {
+      "id": 2,
+      "name": "Siemens Healthineers",
+      "position": "Software Engineering Intern",
+      "period": ["2022. 09", "2023. 05"]
+    }
+  ],
+
+  "project": [
+    {
+      "id": 0,
+      "name": "Machine Learning",
+      "description": "Applied k-means clustering and elbow method using Python scikit-learn to identify the genres of movies based on movie script (NLP).",
+      "repoUrl": "https://github.com/devsther/devsther.github.io/blob/main/machine_learning_project.ipynb",
+      "stack": ["Python"]
+    },
+    {
+      "id": 1,
+      "name": "wordNet",
+      "description": "Designed and implemented a browser-based tool for exploring the history of word usage in English texts using Java OOP and Google Ngram dataset. Based on the user’s choice of words and time range, the most relevant words that are most commonly used during that timeframe are displayed.",
+      "repoUrl": "https://github.com/devsther/devsther.github.io/tree/main/wordNet",
+      "stack": ["Java"]
+    },
+    {
+      "id": 2,
+      "name": "Game generator",
+      "description": "Designed and implemented a random world generator engine depending on seed (number) input. Expected to generate a user-interactive 2D tile-based world and a full gaming environment using Java OOP.",
+      "repoUrl": "https://github.com/devsther/devsther.github.io/tree/main/game_maze",
+      "isTeam": true,
+      "period": ["2023. 11", "2023. 12"],
+      "stack": ["Java (OOP)"]
+    },
+    {
+      "id": 3,
+      "name": "Hey-Doctor",
+      "description": "Hey-Doctor is a platform that is built to increase the accessibility of the medical system to a broader range of people, including unprivileged people who can’t afford medical services financially.",
+      "repoUrl": "https://github.com/devsther/devsther.github.io/tree/main/hey-Doctor",
+      "isTeam": true,
+      "period": ["2023. 04", "2023. 07"],
+      "stack": ["Java (Spring)", "DB", "JavaScript", "HTML/CSS"]
+    }
+  ],
+
+  "activity": [
+    {
+      "id": 0,
+      "name": "NASA Space Apps Challenge, [Hawalli, Kuwait]",
+      "period": ["2020. 10"],
+      "description": "﹒1st place national level\n﹒Nominated for developing an application ‘spot that fire’ which calculated the chances for a natural disaster occurrence in areas through the implementation of a machine learning algorithm.\n  ﹒ Has achieved 95% accuracy based on certified NASA data."
+    },
+    {
+      "id": 1,
+      "name": "American Chemical Society,\nCorporate Committee/ Subcommittee Chair [Berkeley, CA]",
+      "period": ["2021. 10", "2023. 08"],
+      "description": "﹒Tasks include planning events, reaching out to corporations, and communicating with recruiters and scientists.\n﹒Hosted large-scale career events with +30 companies"
+    },
+    {
+      "id": 2,
+      "name": "Innovative Design Web Designing member [Berkeley, CA]",
+      "period": ["2023. 08", "Present"],
+      "description": "﹒UIUX designing/front-end/back-end\n﹒Worked on a paid project with a tech start-up (Rounded Tech) for their web designing and development."
+    },
+    {
+      "id": 3,
+      "name": "Korean Undergraduate Networking Association,\nPresident/PR Director [Berkeley, CA]",
+      "period": ["2020. 08", "Present"],
+      "description": "﹒Hosted networking/social events to form connections between professionals, alumni, and UCB students.\n﹒Tasks include digital marketing through social media (Instagram and Facebook) and managing the General Membership program to build a strong and interconnected Korean community within UC Berkeley.\n﹒Responsible for PR management; formed connections with industrial experts and recruiters to expose UC Berkeley students to professional environments by hosting career fairs and forums."
+    }
+  ],
+
+  "education": [
+    {
+      "id": 0,
+      "name": "University of California, Berkeley",
+      "period": ["Expected Graduation Date", "2025. 05"],
+      "description": "Major: Chemistry, Data Science"
+    }
+  ]
+}

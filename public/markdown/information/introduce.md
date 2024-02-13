@@ -1,0 +1,3 @@
+My name is Esther Moon (legal name: Jiyoung), and I am a student studying Data Science with an emphasis on Ecology at UC Berkeley. Being surrounded by scholars, I was privileged to learn, experience, and develop a strong foundation in data science and software engineering. I am always eager to learn and want to become an engineer who can apply my skills and make impactful changes to make the world a better place.
+
+Little fun facts about myself-I like to explore new restaurants and cook food for friends and family, and I used to be a professional swimmer until 9th grade!
