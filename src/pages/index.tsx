@@ -2,6 +2,8 @@ import fsPromises, * as fs from "fs/promises";
 import path from "path";
 
 import { NextPage } from "next";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 import Activity from "@/components/Activity";
 import Education from "@/components/Education";
@@ -12,6 +14,9 @@ import Project from "@/components/Project";
 import ResumeTitle from "@/components/ResumeTitle";
 import WorkExperience from "@/components/WorkExperience";
 import { DataProps, InformationProps, ProjectProps, WorkExperienceProps } from "@/types";
+import Name from "@/components/Name";
+import useScrollLock from "@/hooks/useScrollLock";
+import isMobile from "@/utils/agent";
 
 const Home: NextPage<DataProps> = ({
   resumeTitle,
@@ -21,10 +26,34 @@ const Home: NextPage<DataProps> = ({
   activity,
   education,
 }) => {
+  const [openInitAnime, setOpenInitAnime] = useState(true);
+
+  useEffect(() => {
+    window.onbeforeunload = () => {
+      window.scrollTo(0, 0);
+    };
+  }, []);
+
+  useScrollLock({ lock: isMobile() ? false : openInitAnime });
+
   return (
     <>
       {/* <ScrollProgress /> */}
       <ResumeTitle resumeTitle={resumeTitle} />
+      <AnimatePresence>
+        {openInitAnime && (
+          <motion.div
+            className="hidden md:flex absolute top-0 left-0 w-[100dvw] h-[100dvh] bg-PRIMARY items-center justify-center"
+            exit={{ opacity: 0 }}
+          >
+            <Name
+              onNameDrawEnd={() => {
+                setOpenInitAnime(false);
+              }}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
       <Layout>
         <Information information={information} />
         <WorkExperience workExperience={workExperience} />
